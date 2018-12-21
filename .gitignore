@@ -1,0 +1,7 @@
+# Ignore all generated files
+*
+
+# Source control git ignore file, Git bash script, README, and Build Tools
+!.gitignore
+!build.sh
+!README.md

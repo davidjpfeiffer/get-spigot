@@ -13,19 +13,20 @@ This command will create lots of files, but you will probably only need some of 
 ### Getting Started
 
 - Clone this repository anywhere on your local computer
-- Open a [Git bash](https://superuser.com/questions/1053633/what-is-git-bash-for-windows-anyway#1053657) window in the root directory of this repository
+- Open a [Git bash](https://superuser.com/questions/1053633/what-is-git-bash-for-windows-anyway#1053657) window
   - If you do not have this program installed, you can install it by simply installing [Git](https://git-scm.com/downloads)
-- Run `./build.sh <version>` in the Git bash window from the root repository directory
-  - You can navigate to the root repository directory by typing `cd "\<repository_location\>"` in the Git bash window
+- Navigate to this repository inside the Git bash window
+  - You can do this by typing `cd "\<repository_location\>"` in the Git bash window
+- Run `./build.sh <version>` in the Git bash window
   - Replace \<version\> with the desired Minecraft version
-  - For example, `build.sh 1.12.2` will output the files for Minecraft version 1.12.2 in a new directory named 1.12.2
+  - For example, `./build.sh 1.12.2` will output the files for Minecraft version 1.12.2 in a new directory named 1.12.2
 
 ### Files For Hosting a Minecraft Server
 
 To host a Minecraft server, you need a version of Minecraft to run on that server. Because Minecraft is written in the Java programming language, this file with be of type [JAR](https://en.wikipedia.org/wiki/JAR_(file_format)). You can download the vanilla Minecraft server JAR file from the [Mojang website](https://minecraft.net/en-us/download/server/), but if you use this file you won't be able to run any Bukkit or Spigot plugins. To run Bukkit or Spigot plugins, you need a slightly modified version of the Minecraft server JAR file. The build script in this repository generates this file for you. You can learn more about hosting a minecraft server [here](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).
 
-- Bukkit server file location: `/<version>/CraftBukkit/target/craftbukkit.jar`
-- Spigot server file location: `/<version>/Spigot/Spigot-Server/target/spigot.jar`
+- Bukkit server file location: `/<version>/CraftBukkit/target/craftbukkit-<version>.jar`
+- Spigot server file location: `/<version>/Spigot/Spigot-Server/target/spigot-<version>.jar`
 
 ### Files For Developing Minecraft Server Plugins
 

@@ -1,4 +1,4 @@
-# Spigot
+# Get Spigot
 
 The fastest and easiest way to download any version of [Spigot](https://www.spigotmc.org/) to your local computer.
 

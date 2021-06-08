@@ -23,7 +23,7 @@ This command will create lots of files, but you will probably only need some of 
 
 ### Files For Hosting a Minecraft Server
 
-To host a Minecraft server, you need a version of Minecraft to run on that server. Because Minecraft is written in the Java programming language, this file with being of type [JAR](https://en.wikipedia.org/wiki/JAR_(file_format)). You can download the vanilla Minecraft server JAR file from the [Mojang website](https://minecraft.net/en-us/download/server/), but if you use this file you won't be able to run any Bukkit or Spigot plugins. To run Bukkit or Spigot plugins, you need a slightly modified version of the Minecraft server JAR file. The build script in this repository generates this file for you. You can learn more about hosting a Minecraft server [here](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).
+To host a Minecraft server, you need a version of Minecraft to run on that server. Because Minecraft is written in the Java programming language, this will be a [JAR](https://en.wikipedia.org/wiki/JAR_(file_format)) file. You can download the vanilla Minecraft server JAR file from the [Mojang website](https://minecraft.net/en-us/download/server/), but if you use this file you won't be able to run any Bukkit or Spigot plugins. To run Bukkit or Spigot plugins, you need a slightly modified version of the Minecraft server JAR file. The build script in this repository generates this file for you. You can learn more about hosting a Minecraft server [here](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).
 
 - Bukkit server file location: `/<version>/CraftBukkit/target/craftbukkit-<version>.jar`
 - Spigot server file location: `/<version>/Spigot/Spigot-Server/target/spigot-<version>.jar`

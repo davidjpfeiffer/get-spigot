@@ -6,9 +6,9 @@ The build script in this repository uses the [Spigot Build Tools](https://www.sp
 
 ### How It Works
 
-The build script takes the version of Minecraft you want to build for as a parameter. A new directory will be created for the version you pass in. You can keep mutliple versions in this repository, all of which will be usable on your computer. This makes it easy to obtain and manage multiple different versions of Spigot on your local machine.
+The build script takes the version of Minecraft you want to build for as a parameter. A new directory will be created for the version you pass in. You can keep multiple versions in this repository, all of which will be usable on your computer. This makes it easy to obtain and manage multiple different versions of Spigot on your local machine.
 
-This command will create lots of files, but you will probably only need some of them. These files have various uses, but most people use them to either [host a Minecraft server](/#Files-For-Hosting-a-Minecraft-Server) or to [develop Minecraft server plugins](/#Files-For-Developing-Minecraft-Server-Plugins). See the below sections for more information on how to do this.
+This command will create lots of files, but you will probably only need some of them. These files have various uses, but most people use them to either [host a Minecraft server](/#Files-For-Hosting-a-Minecraft-Server) or [develop Minecraft server plugins](/#Files-For-Developing-Minecraft-Server-Plugins). See the below sections for more information on how to do this.
 
 ### Getting Started
 
@@ -23,7 +23,7 @@ This command will create lots of files, but you will probably only need some of 
 
 ### Files For Hosting a Minecraft Server
 
-To host a Minecraft server, you need a version of Minecraft to run on that server. Because Minecraft is written in the Java programming language, this file with be of type [JAR](https://en.wikipedia.org/wiki/JAR_(file_format)). You can download the vanilla Minecraft server JAR file from the [Mojang website](https://minecraft.net/en-us/download/server/), but if you use this file you won't be able to run any Bukkit or Spigot plugins. To run Bukkit or Spigot plugins, you need a slightly modified version of the Minecraft server JAR file. The build script in this repository generates this file for you. You can learn more about hosting a minecraft server [here](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).
+To host a Minecraft server, you need a version of Minecraft to run on that server. Because Minecraft is written in the Java programming language, this file with being of type [JAR](https://en.wikipedia.org/wiki/JAR_(file_format)). You can download the vanilla Minecraft server JAR file from the [Mojang website](https://minecraft.net/en-us/download/server/), but if you use this file you won't be able to run any Bukkit or Spigot plugins. To run Bukkit or Spigot plugins, you need a slightly modified version of the Minecraft server JAR file. The build script in this repository generates this file for you. You can learn more about hosting a Minecraft server [here](https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server).
 
 - Bukkit server file location: `/<version>/CraftBukkit/target/craftbukkit-<version>.jar`
 - Spigot server file location: `/<version>/Spigot/Spigot-Server/target/spigot-<version>.jar`
@@ -51,11 +51,11 @@ You can learn more about developing Minecraft server plugins from resources onli
 
 Why should I use this repository to obtain a Spigot build? Why can't I just download the files I want online?
 
-Good question! The answer is that distributing copyrighted intillectual property over the internet is illegal. Because Spigot is built ontop of Minecraft, it is illegal to distribute the files from a Spigot build online because those files include Minecraft source files, which are the coprighted intillectual property of Mojang.
+Good question! The answer is that distributing copyrighted intellectual property over the internet is illegal. Because Spigot is built on top of Minecraft, it is illegal to distribute the files from a Spigot build online because those files include Minecraft source files, which are the copyrighted intellectual property of Mojang.
 
 To get around this, you must generate the files yourself using the Build Tools provided by Spigot. You can then legally use these files to run a server and develop plugins for Minecraft servers.
 
-### What The Build Script Actually Does
+### What The Build Script Does
 
 - Checks for updates to this repository
   - If there are updates, then they are pulled in and the script quits
